@@ -26,7 +26,8 @@
         <section id="articles-list">
             {{ range $pages.GroupByDate "2006" }}
             <section>
-                <h2>{{ .Key }}</h2>
+                <!-- remove years H2 -->
+                <!-- <h2>{{ .Key }}</h2> -->
                 <div class="posts">
                     {{ range .Pages }}
                     <div class="post">
